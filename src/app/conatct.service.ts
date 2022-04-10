@@ -31,4 +31,9 @@ export class ConatctService {
       responseType: 'text',
     });
   }
+
+  //4. fetch one
+  fetchOneEmployee(id: number): Observable<Contact> {
+    return this.http.get<Contact>(`${this.uri}/contact/${id}`);
+  }
 }

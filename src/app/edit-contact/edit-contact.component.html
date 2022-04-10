@@ -1,1 +1,56 @@
-<p>edit-contact works!</p>
+<div class="card">
+    <div class="card-header text-center bg-info text-white">
+      <h3>Update Contact</h3>
+    </div>
+    <div class="card-body">
+      <form action="#" (ngSubmit)="updateContact()">
+        <div class="form-group">
+          <label>Contact Id</label>
+          <input
+            type="text"
+            name="contactId"
+            id="contactId"
+            [(ngModel)]="contact.contactId"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            name="contactName"
+            id="contactName"
+            [(ngModel)]="contact.contactName"
+            class="form-control"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label>Number</label>
+          <input
+            type="number"
+            name="contactGsm"
+            id="contactGsm"
+            [(ngModel)]="contact.contactGsm"
+            class="form-control"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label>Email</label>
+          <textarea
+            name="contactEmail"
+            id="contactEmail"
+            [(ngModel)]="contact.contactEmail"
+            class="form-control"
+          >
+          </textarea>
+        </div>
+  
+        <button type="submit" class="btn btn-success">UPDATE</button>
+      </form>
+    </div>
+    
+  </div>
+  
