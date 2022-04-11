@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUri : 'http://localhost:8080/api'
-  //baseUri : 'https://myappcontacts.herokuapp.com/api'
+  //baseUri : 'http://localhost:8080/api'
+  baseUri : 'https://myappcontacts.herokuapp.com/api'
 };
 
 /*

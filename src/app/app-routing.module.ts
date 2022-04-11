@@ -8,7 +8,7 @@ const routes: Routes = [
   {path:'add', component:AddContactComponent},
   {path:'list', component:AllContactComponent},
   {path:'edit/:id', component:EditContactComponent},
-  {path:'*', redirectTo:'list',pathMatch:'full'},
+  {path:'', redirectTo:'list',pathMatch:'full'},
 ];
 
 @NgModule({
